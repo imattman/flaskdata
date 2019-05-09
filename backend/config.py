@@ -1,7 +1,7 @@
 from configparser import ConfigParser
 
  
-def dbconfig(filename='backend\dbandsupport.ini', section='postgresql'):
+def dbconfig(filename='backend/dbandsupport.ini', section='postgresql'):
     # create a parser
     parser = ConfigParser()
     # read config file
@@ -18,7 +18,7 @@ def dbconfig(filename='backend\dbandsupport.ini', section='postgresql'):
 
     return db 
  
-def skconfig(filename='backend\dbandsupport.ini', section='flask'):
+def skconfig(filename='backend/dbandsupport.ini', section='flask'):
     # create a parser
     parser = ConfigParser()
     # read config file

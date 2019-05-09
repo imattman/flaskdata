@@ -16,7 +16,7 @@ def onequery():
         cur = conn.cursor()
         
         # execute a statement
-        with open(r"backend\sqlfiles\all.sql", 'r') as f:
+        with open(r"backend/sqlfiles/all.sql", 'r') as f:
             cur.execute(f.read())
         conn.commit()
  
